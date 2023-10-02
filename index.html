@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link  href="https://fonts.googleapis.com.css? family=Poppins&display=swap" ref="stylesheet">
+    <title>Spend-management-app</title>
+</head>
+<body>
+    <marquee> <h1>Spending Management App</h1></marquee>
+    <div class="mainDiv">
+        
+    <h2>Add Expense</h2>
+    <div class="expenseNameDiv">
+    <label for="expenseName">Expense Name:</label>
+    <input type="text" id="expenseName" placeholder="Enter expense name">
+    </div>
+    <div class="expenseAmountDiv">
+    <label for="expenseAmount">Expense Amount:</label>
+    <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+    <button id="addExpenseButton">Add</button>
+    </div>
+
+    <h2>Expense List</h2>
+    <ol id="expenseList"></ol>
+
+    <h2>Total Expenses</h2>
+    <p id="totalExpense">Total: #0</p>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

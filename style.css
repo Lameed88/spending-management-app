@@ -1,0 +1,146 @@
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: rgb(200, 229, 151);
+  }
+
+  h1{
+    text-shadow: 2px 3px 5px rgb(8, 95, 129);
+    font-family: 'poppins';
+
+  }
+
+  h2{
+    font-family: 'poppins';
+  }
+
+
+  .mainDiv {
+    background-color: rgb(79, 184, 58);
+    height: 80vmin;
+    width: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 60px 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 7px 10px 0px rgba(6, 1, 26, 0.2);
+    padding: 20px 30px;
+  }
+
+  .mainDiv:hover {
+    background-color: rgb(103, 158, 9);
+    transition: all 0.9s ease-in-out;
+
+  }
+
+.expenseNameDiv {
+    width: 100%;
+    background-color: rgb(227, 220, 121);
+    display: flex;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 10px 0;
+}
+
+.expenseNameDiv label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.expenseNameDiv input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(216, 213, 169); 
+    width: 100%;   
+
+}
+
+.expenseAmountDiv {
+    width: 100%;
+    background-color: rgb(227, 220, 121);    
+    display: flex;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 10px 0;
+    gap: 5px;
+}
+
+
+.expenseAmountDiv input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(216, 213, 169);  
+    width: 100%;  
+
+}
+
+.expenseAmountDiv label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.expenseAmountDiv button {
+    cursor: pointer;
+    background-color: rgb(120, 182, 197);
+    width: 30%;
+    padding: 5px;
+    outline: none;
+    color: black;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 40px;
+    background: transparent;
+    transition: all 0.9s ease-in-out;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.expenseAmountDiv button:hover {
+    background-color: rgb(71, 168, 71);
+} 
+
+.totalExpense .expenseList {
+    border: 20px 0;
+    background-color: blueviolet;
+}
+
+/* @media screen and (max-width: 600px) { */
+    @keyframes modalopen {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+      
+      
+      @media (max-width: 700px) {
+        .choice {
+          font-size: 110px;
+        }
+      }
+      
+      @media (max-width: 500px) {
+        .choice {
+          font-size: 80px;
+       }
+      }
+
