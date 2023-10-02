@@ -1,8 +1,8 @@
 
-const expenseNeame = document.getElementById('expenseName')
+const expenseName = document.getElementById('expenseName')
 const expenseAmount = document.getElementById('expenseAmount')
 const addExpenseButton = document.getElementById('addExpenseButton')
-console.log(expenseNeame);
+console.log(expenseName);
 console.log(expenseAmount);
 console.log(addExpenseButton);
 
@@ -13,7 +13,7 @@ let expenses = []
 addExpenseButton.addEventListener('click', () => {
 
     const expenseName = document.querySelector('#expenseName').value
-    const expenseAmount = parseFloat(document.querySelector('#expenseAmount').value) 
+    const expenseAmount = parseFloat(document.querySelector('#expenseAmount').value)
     console.log(expenseName);
     console.log(expenseAmount);
 
@@ -26,7 +26,7 @@ addExpenseButton.addEventListener('click', () => {
         expenses.push(expense)
         console.log(expenses);
  }else {
-    alert('Enter a valid input ')
+    alert('Enter a valid input')
 }
 
     const defaultExpenseName = document.getElementById("expenseName").value = "";
@@ -34,14 +34,14 @@ addExpenseButton.addEventListener('click', () => {
     console.log(defaultExpenseAmount);
     console.log(defaultExpenseName);
 
-    expenseList()
+    inputExpenseList()
     sumTotalExpense()
 })
 
 
-const expenseList = () => {
+const inputExpenseList = () => {
     const expenseList = document.querySelector('#expenseList')
-    expenseList.innerHTML = ''
+    expenseList.innerHTML = "";
     expenses.forEach((expense) => {
         const itemList = document.createElement('li')
         itemList.textContent = `${expense.name}:  #${expense.amount}`
@@ -50,7 +50,7 @@ const expenseList = () => {
 }
 
 const sumTotalExpense = () => {
-    const totalExpense = expenses.reduce((expenses, expense) => expenses + expense.amount, 0)
-    const randUp = document.getElementById("totalExpense").textContent = `Total: #${totalExpense.toFixed(2)}`;
+    const totalExpense = expenses.reduce((sum, expense) => sum + expense.amount, 0)
+    const randUp = document.getElementById("totalExpense").textContent = `Total: #${totalExpense}`;
     console.log(randUp);
 }
